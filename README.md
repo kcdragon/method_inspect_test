@@ -51,4 +51,6 @@ Looks like this:
 
 This output is useful for my goals.  My method of getting this output is not.
 
+So I need one of two things - an army of interns to run through the application's views at the beginning of a project to collect the data or a method that will allow me to listen for methods being called somehow to be able to generate this output.
 
+Ideas?
