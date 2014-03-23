@@ -16,7 +16,7 @@ At the moment only the show route on birds controller matters.  I instanciate th
 
 Looks like this:
 
-```html
+
 <pre class="debug_dump">---
 :views_birds_show:
 &nbsp; notice:
@@ -48,7 +48,6 @@ Looks like this:
 &nbsp; - &quot;/Users/brianmcelaney/workspace/reflect_test/app/service/ping_service.rb&quot;
 &nbsp; - 6
 </pre>
-```
 
 This output is useful for my goals.  My method of getting this output is not.
 
