@@ -12,7 +12,7 @@ My goal is to be able to see complexity and/or provide documentation for view ti
 
 This app is just a fast demo of what my near-term target is with the hope someone can point me in the right direction.  It's a simple Rails 4 install using SQLite with a scaffold and a couple POROs to give me a simple test to hack against.
 
-At the moment only the show route on birds controller matters.  I instanciate the hash in the app controller and then populate it at the end of each view file (well - used on this call anyway).  For now I am just debugging the result at the end of application.html.erb.
+At the moment only the show route on birds controller matters.  I instantiate the hash in the app controller and then populate it at the end of each view file (well - used on this call anyway).  For now I am just debugging the result at the end of application.html.erb.
 
 Looks like this:
 
