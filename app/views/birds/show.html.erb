@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bird.name %>
+</p>
+
+<p>
+  <strong>Ping:</strong>
+  <%= @bird.sing %>
+</p>
+
+<p>
+  <strong>Woop:</strong>
+  <%= BingService.new().woop %>
+</p>
+
+<%= link_to 'Edit', edit_bird_path(@bird) %> |
+<%= link_to 'Back', birds_path %>
+
+<%- @method_log[:views_birds_show] = Hash.new %>
+<%- @method_log[:views_birds_show]['notice'] = method(:notice).source_location %>
+<%- @method_log[:views_birds_show]['@bird.name'] = @bird.method(:name).source_location %>
+<%- @method_log[:views_birds_show]['@bird.sing'] = @bird.method(:sing).source_location %>
+<%- @method_log[:views_birds_show]['BingService.new().woop'] = BingService.new().method(:woop).source_location %>
+<%- @method_log[:views_birds_show]['link_to'] = method(:link_to).source_location %>
+<%- @method_log[:views_birds_show]['link_to'] = method(:link_to).source_location %>

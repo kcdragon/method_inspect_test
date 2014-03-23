@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReflectTest</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= PingService.hello %>
+<%= yield %>
+
+</body>
+</html>
+
+<%- @method_log[:application] = Hash.new %>
+<%- @method_log[:application]['stylesheet_link_tag'] = method(:stylesheet_link_tag).source_location %>
+<%- @method_log[:application]['javascript_include_tag'] = method(:javascript_include_tag).source_location %>
+<%- @method_log[:application]['csrf_meta_tags'] = method(:csrf_meta_tags).source_location %>
+<%- @method_log[:application]['PingService.hello'] = PingService.method(:hello).source_location %>
+
+<%= debug @method_log %>
